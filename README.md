@@ -8,7 +8,7 @@ It shows what buying a tower would feel like: mission statement, the 7-tier hydr
 
 ## Files
 - `index.html` – the whole site (HTML, CSS and JavaScript in one file)
-- `images/` – product and lifestyle photos (supplier product photo; lifestyle photos from Unsplash)
+- `images/` – product and lifestyle photos (supplier product photos; close-up photos from Unsplash)
 
 ## Hosting
 Served with GitHub Pages from the `main` branch, root folder.

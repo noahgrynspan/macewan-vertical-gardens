@@ -48,7 +48,7 @@ nav{display:flex;gap:22px}nav a{text-decoration:none;font-weight:700;font-size:1
 .count.bump{animation:bump .4s}
 @keyframes bump{40%{transform:scale(1.35)}}
 /* hero */
-.hero{position:relative;display:grid;align-items:end;min-height:clamp(520px,72vh,680px);background:#9d9d9b var(--i-hero) 70% 28%/cover no-repeat}
+.hero{position:relative;display:grid;align-items:end;min-height:clamp(520px,72vh,680px);background:var(--i-hero) right center/auto 100% no-repeat,linear-gradient(90deg,#e9e9e9,#dcdcdc)}
 .tag{position:relative;margin:max(5vw,16px);width:min(500px,100%);background:var(--card);border-radius:22px;padding:30px 30px 26px;box-shadow:var(--shadow)}
 .tag::before{content:"";position:absolute;top:18px;right:20px;width:16px;height:16px;border-radius:50%;border:3px solid var(--line);background:var(--bg)}
 .lede{font-size:17px;color:var(--muted)}
@@ -142,7 +142,7 @@ legend{font-weight:700;padding:0 6px}
 @media(max-width:600px){
  .brand span{font-size:16px}.cartbtn .lbl{display:none}
  .hero{display:block;min-height:0;background:none}
- .hero::before{content:"";display:block;aspect-ratio:5/4;background:#9d9d9b var(--i-hero) 68% 30%/cover}
+ .hero::before{content:"";display:block;aspect-ratio:4/5;background:#e2e2e2 var(--i-hero) right -110px center/auto 100% no-repeat}
  .tag{margin:-44px 12px 0;width:auto;padding:24px 20px 20px}
  .steps{grid-template-columns:minmax(0,1fr)}.team{grid-template-columns:repeat(2,minmax(0,1fr))}.person:last-child{grid-column:1/-1}
  .sessions{grid-template-columns:minmax(0,1fr)}
@@ -150,7 +150,7 @@ legend{font-weight:700;padding:0 6px}
  .sheet.on{transform:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
 </style>
-<style>:root{--i-product:url('images/tower-and-parts.jpg');--i-hero:url('images/tower-at-home.jpg');--i-close:url('images/lettuce-closeup.jpg');--i-tiers:url('images/tower-tiers.jpg');--i-work:url('images/workshop-roots.jpg')}</style>
+<style>:root{--i-product:url('images/tower-and-parts.jpg');--i-hero:url('images/tower-hero.jpg');--i-greens:url('images/tower-greens.jpg');--i-close:url('images/lettuce-closeup.jpg');--i-tiers:url('images/tower-tiers.jpg');--i-work:url('images/workshop-roots.jpg')}</style>
 </head>
 <body>
 <div class="ribbon">Student proof-of-concept for BUSN 201 (Team I). This is a demo store: nothing is sold, and no payment or personal details are collected.</div>
@@ -163,7 +163,7 @@ legend{font-weight:700;padding:0 6px}
 </div></header>
 
 <main id="top">
-<section class="hero" aria-label="A person tending a leafy tower garden at home">
+<section class="hero" aria-label="The 7-tier vertical garden tower">
  <div class="tag">
   <h1>Fresh greens, grown in your living room</h1>
   <p class="lede">A 7-tier hydroponic tower garden for people who don't have room for a real garden. No soil, no yard, harvest all year.</p>
@@ -177,7 +177,7 @@ legend{font-weight:700;padding:0 6px}
   <div class="main-img" id="mainImg" role="img" aria-label="The 7-tier tower with its pump, adapter, tray and seed sheet"></div>
   <div class="thumbs" role="group" aria-label="Product photos">
    <button aria-pressed="true" data-img="--i-product" style="background-image:var(--i-product);background-color:#d9d9d9" aria-label="Tower and accessories"></button>
-   <button aria-pressed="false" data-img="--i-hero" style="background-image:var(--i-hero)" aria-label="Tower in a home"></button>
+   <button aria-pressed="false" data-img="--i-greens" style="background-image:var(--i-greens)" aria-label="Greens growing in the tiers"></button>
    <button aria-pressed="false" data-img="--i-close" style="background-image:var(--i-close)" aria-label="Lettuce growing in a tier"></button>
   </div>
  </div>
